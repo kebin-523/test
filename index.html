@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>클래스로(Classro) - 원데이 클래스 예약 서비스</title>
+  <meta name="description" content="동네 공방·작업실의 원데이 클래스를 앱에서 찾고 바로 예약·결제하는 서비스, 클래스로">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">Class<span>ro</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#about">소개</a>
+        <a href="#info">기본 정보</a>
+        <a href="#flow">사용자 흐름</a>
+        <a href="#goals">분기 목표</a>
+        <a href="#news">최근 소식</a>
+        <a href="#teams">팀별 고민</a>
+        <a href="#kit">키트 파일</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="hero__badge">원데이 클래스 예약 플랫폼</p>
+        <h1>오늘 배우고 싶은 것,<br><em>동네 공방</em>에서 바로 예약</h1>
+        <p class="hero__desc">
+          도자기, 베이킹, 가죽공예, 플라워, 드로잉, 향수까지.<br>
+          클래스로에서 찾고, 예약하고, 결제까지 한 번에.
+        </p>
+        <div class="hero__tags">
+          <span>도자기</span><span>베이킹</span><span>가죽공예</span>
+          <span>플라워</span><span>드로잉</span><span>향수</span>
+        </div>
+        <a href="#info" class="btn">회사 정보 보기</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title reveal">한 줄 소개</h2>
+        <p class="lead reveal">
+          동네 공방·작업실의 <strong>원데이 클래스</strong>를 앱에서 찾고 바로 예약·결제하는 서비스.
+        </p>
+        <p class="notice reveal">※ 수업용 가상 회사입니다. 등장하는 회사·인물·수치는 모두 지어낸 것입니다.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="info">
+      <div class="container">
+        <h2 class="section__title reveal">숫자로 보는 클래스로</h2>
+        <div class="stats">
+          <div class="stat reveal">
+            <strong data-count="420" data-suffix="곳">0</strong>
+            <span>제휴 공방</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="7000" data-prefix="약 " data-suffix="건">0</strong>
+            <span>월 예약 (2026년 9월)</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="42000" data-suffix="원">0</strong>
+            <span>1인 평균 결제액</span>
+          </div>
+          <div class="stat reveal">
+            <strong data-count="30" data-suffix="명">0</strong>
+            <span>함께하는 직원</span>
+          </div>
+        </div>
+
+        <h3 class="sub-title reveal">기본 정보</h3>
+        <div class="table-wrap reveal">
+          <table class="table">
+            <tbody>
+              <tr><th>설립</th><td>2023년 3월</td></tr>
+              <tr><th>대표</th><td>한서윤</td></tr>
+              <tr><th>직원</th><td>30명 (개발 11, 디자인 4, PO 3, 마케팅 5, 운영·CS 5, 경영지원 2)</td></tr>
+              <tr><th>서비스</th><td>iOS·Android 앱, 모바일 웹</td></tr>
+              <tr><th>제휴 공방</th><td>약 420곳 (서울 280, 경기 110, 기타 30)</td></tr>
+              <tr><th>월 예약</th><td>약 7천 건 (2026년 9월 기준)</td></tr>
+              <tr><th>평균 결제액</th><td>1인 42,000원</td></tr>
+              <tr><th>수익 모델</th><td>예약 건당 수수료 15%</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="sub-title reveal">제휴 공방 지역 분포</h3>
+        <div class="bars reveal">
+          <div class="bar"><span>서울</span><div class="bar__track"><i style="--w:66.7%"></i></div><b>280</b></div>
+          <div class="bar"><span>경기</span><div class="bar__track"><i style="--w:26.2%"></i></div><b>110</b></div>
+          <div class="bar"><span>기타</span><div class="bar__track"><i style="--w:7.1%"></i></div><b>30</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="flow">
+      <div class="container">
+        <h2 class="section__title reveal">핵심 사용자 흐름</h2>
+        <ol class="steps">
+          <li class="reveal"><b>1</b><span>방문</span></li>
+          <li class="reveal"><b>2</b><span>검색/탐색</span></li>
+          <li class="reveal"><b>3</b><span>클래스 상세</span></li>
+          <li class="reveal"><b>4</b><span>예약 시작<small>날짜·인원 선택</small></span></li>
+          <li class="reveal"><b>5</b><span>결제</span></li>
+          <li class="reveal"><b>6</b><span>예약 완료</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="goals">
+      <div class="container">
+        <h2 class="section__title reveal">이번 분기(2026년 4분기) 목표</h2>
+        <div class="cards cards--3">
+          <article class="card reveal">
+            <span class="card__num">01</span>
+            <h3>예약 전환율 회복</h3>
+            <p>방문 대비 예약 완료율이 최근 4주 <strong>2.7%</strong>로 하락(이전 4주 3.9%).</p>
+            <p class="card__goal">목표 <strong>3.9%</strong> 회복</p>
+            <div class="meter" aria-label="전환율 2.7%에서 3.9% 목표"><i style="--w:69%"></i></div>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">02</span>
+            <h3>앱 리뷰 평점 유지</h3>
+            <p>리뷰 평점 하락 흐름 속에서 신뢰도를 지킵니다.</p>
+            <p class="card__goal">목표 <strong>4.5</strong> 유지</p>
+          </article>
+          <article class="card reveal">
+            <span class="card__num">03</span>
+            <h3>마케팅 CAC 관리</h3>
+            <p>예약 1건당 광고비를 효율적으로 관리합니다.</p>
+            <p class="card__goal">목표 <strong>9,000원</strong> 이하</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="news">
+      <div class="container">
+        <h2 class="section__title reveal">최근 있었던 일</h2>
+        <ul class="timeline">
+          <li class="reveal">
+            <time>2026-09-28</time>
+            <p>앱 <strong>v2.3.0</strong> 배포 — 결제 화면 개편, 간편결제 추가</p>
+          </li>
+          <li class="reveal">
+            <time>2026-09-28 주부터</time>
+            <p>마케팅팀이 예산 일부를 인스타그램에서 신규 디스플레이 광고 네트워크(<code>display_net</code>)로 이동 (클릭당 단가가 싸다는 이유)</p>
+          </li>
+          <li class="reveal">
+            <time>2026-10월</time>
+            <p>리뷰 평점 하락, CS 문의 증가</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="teams">
+      <div class="container">
+        <h2 class="section__title reveal">팀별 고민</h2>
+        <div class="cards cards--2">
+          <article class="card reveal"><h3>개발</h3><p>결제 API 응답이 느려졌다는 제보. 테스트 커버리지 낮음.</p></article>
+          <article class="card reveal"><h3>디자인</h3><p>결제 화면 개편 후 사용성 테스트를 못 함. 디자인 가이드가 문서로만 존재.</p></article>
+          <article class="card reveal"><h3>PO</h3><p>VOC가 Slack·이메일·앱 리뷰에 흩어져 있어 우선순위를 못 정함.</p></article>
+          <article class="card reveal"><h3>마케팅</h3><p>주간 광고 리포트를 매주 월요일 3시간씩 수작업으로 정리.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kit">
+      <div class="container">
+        <h2 class="section__title reveal">키트 파일</h2>
+        <div class="table-wrap reveal">
+          <table class="table table--kit">
+            <thead><tr><th>파일</th><th>내용</th></tr></thead>
+            <tbody>
+              <tr><td><code>01_페르소나_인터뷰.md</code></td><td>페르소나 3명 + 인터뷰 녹취 5건</td></tr>
+              <tr><td><code>02_리뷰_500.csv</code></td><td>앱스토어 리뷰 500건 (2026-08-31 ~ 2026-10-25)</td></tr>
+              <tr><td><code>02b_리뷰_30.csv</code></td><td>수업 실습용 30건 (M3 프롬프트 모듈)</td></tr>
+              <tr><td><code>03_이벤트로그.csv</code></td><td>앱 행동 로그 8주 (전체 트래픽의 약 10% 샘플)</td></tr>
+              <tr><td><code>04_광고성과.csv</code></td><td>채널별 일별 광고 성과 (정제본)</td></tr>
+              <tr><td><code>04b_광고성과_원본.csv</code></td><td>같은 데이터의 지저분한 원본 (D32 정제 실습)</td></tr>
+              <tr><td><code>05_화면캡처/ + 디자인가이드.md</code></td><td>예약 플로우 5화면</td></tr>
+              <tr><td><code>06_classro-repo/</code></td><td>서비스 코드 (Next.js)</td></tr>
+              <tr><td><code>07_상황카드.md</code></td><td>모듈별 사건</td></tr>
+              <tr><td><code>08_CS문의_10.csv</code></td><td>마스킹 실습용 가상 문의 (D7)</td></tr>
+              <tr><td><code>09_슬랙대화_샘플.txt</code></td><td>주간보고 자동화 실습용 (D23)</td></tr>
+              <tr><td><code>10_회의록_샘플.md</code></td><td>회의록 → 액션아이템 실습용 (D11)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="logo logo--footer">Class<span>ro</span></p>
+      <p>수업용 가상 회사입니다. 등장하는 회사·인물·수치는 모두 지어낸 것입니다.</p>
+      <p>© 2026 Classro. 대표 한서윤</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
